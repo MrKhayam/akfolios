@@ -15,3 +15,35 @@
 *{
   font-family: "Poppins",sans-serif;
 }
+
+
+
+
+
+
+
+/* Apply to the whole document or a specific container */
+body, .custom-scrollbar {
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #cfcfcf #f9f9f9; /* Track and thumb colors */
+}
+
+/* Webkit Browsers (Chrome, Edge, Safari) */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f9f9f9; /* Light track color */
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #cfcfcf; /* Light gray thumb */
+  border-radius: 10px;
+  border: 2px solid #f9f9f9; /* Adds spacing between thumb and track */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #b3b3b3; /* Darker on hover for contrast */
+}
